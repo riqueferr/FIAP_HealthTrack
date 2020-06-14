@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Health Track</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='image/logo.ico'>
+</head>
+
+<body>
+
+    <nav class='navbar navbar-expand-sm navbar-dark fixed-top fontNav'>
+        <a class='navbar-brand fontLogo' href='index.html'>
+            <img src='image/logo.png' class='d-inline-block align-top logoPrincipal'>
+            Health Track
+        </a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#conteudo-navbar'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='conteudo-navbar'>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item'>
+                    <a class='nav-link' href='index.html'>DASHBOARD</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='IMC.html'>IMC</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='medidas.html'>MEDIDAS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='alimentos.html'>ALIMENTOS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='pressao.html'>PRESSÃO ARTERIAL</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='quemsomos.html'>QUEM SOMOS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='login.html'>SAIR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        <div class='row descerLinha linhaTitulo'>
+            <div class='col-4'>
+                ALIMENTO
+            </div>
+            <div class='col-4'>
+                CALORIAS
+            </div>
+            <div class='col-4'>
+                EDITAR
+            </div>
+            <hr class='mr-4'>
+        </div>
+        <div class='row linhaInfo'>
+            <div class='col-4'>
+                MAÇÃ
+            </div>
+            <div class='col-4'>
+                200 Kcal
+            </div>
+            <div class='col-4'>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-pencil-square-o"></i>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class='row linhaInfo'>
+            <div class='col-4'>
+                BANANA
+            </div>
+            <div class='col-4'>
+                170 Kcal
+            </div>
+            <div class='col-4'>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-pencil-square-o"></i>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class='row linhaInfo'>
+            <div class='col-4'>
+                LARANJA
+            </div>
+            <div class='col-4'>
+                220 Kcal
+            </div>
+            <div class='col-4'>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-pencil-square-o"></i>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class='row justify-content-center botaoEspacamento'>
+            <button type="button" class="btn btn-danger botaoRedondo" data-toggle="modal" data-target="#alimentosModal">
+                Adicionar informação</button>
+
+            <div class="modal fade" id="alimentosModal" tabindex="-1" role="dialog" aria-labelledby="alimentosLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="alimentosLabel">Informe:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="data" class="col-form-label">Data:</label>
+                                    <input type="date" class="form-control" id="data">
+                                </div>
+                                <div class="form-group">
+                                    <label for="alimento" class="col-form-label">Alimento:</label>
+                                    <input type="text" class="form-control" id="alimento">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantidade" class="col-form-label">Quantidade:</label>
+                                    <input type="number" class="form-control" id="quantidade">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kcal" class="col-form-label">Kcal:</label>
+                                    <input type="number" class="form-control" id="kcal">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary botaoRedondo"
+                                data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-danger botaoRedondo">Salvar informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

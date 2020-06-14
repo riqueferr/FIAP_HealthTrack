@@ -1,0 +1,185 @@
+.navbar {
+    background-color: rgb(236, 155, 162);
+    color: #FFF;
+    font-style: bold;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mr-4 {
+    background-color: rgb(233, 210, 211);
+}
+
+.jumbotrom {
+    margin-top: 30px;
+}
+
+
+.quadros {
+    background-color: rgb(233, 236, 239);
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: solid 0.5px rgb(197, 182, 182)
+}
+
+
+.destaque {
+    color:  rgb(220, 53, 69);
+}
+
+
+
+.tituloQuadro {
+    text-align: center;
+}
+
+
+.irformacao {
+    text-align: center !important;
+}
+
+
+.botaoRedondo {
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 10px;
+}
+
+.iconsB4 {
+    width: 20px;
+    height: 30px;
+}
+
+.logoPrincipal {
+    width:30px;
+    height:30px;
+    justify-content: center;   
+}
+
+.icones {
+    height: 30px;
+    width: 30px;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer {
+    background-color: rgb(233, 236, 239);
+}
+
+.descerLinha {
+    margin-top: 70px;
+}
+
+.linhaTitulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.linhaInfo {
+    text-align: center;
+    padding: 10px;
+    border-top: solid 1px rgb(197, 182, 182);
+}
+
+.botaoAlinhamento {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+.imagemTamanho {
+    padding:50px;
+    width: 100%;
+}
+
+.centralizartextos {
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;;
+}
+
+.bordaCadastro {
+    border: solid 1px rgb(220, 53, 69);
+    height: 40px;
+    width: 40px;
+}
+
+.main-form {
+    width: 100%;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+
+  
+  .logoentrar {
+    justify-content: center !important;
+    text-align: center !important;
+    
+  }
+   
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+    text-align: end !important;
+    margin: 10px ;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-signin .form-control:focus {
+    z-index: 4;
+}
+.form-signin input[type="emaiLogin"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="senhaLogin"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.imagemCadastro {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: -70px;
+    margin-right: 0px;
+}
+
+.imagemQuadros {
+    padding:90px;
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.botaoEspacamento {
+    margin-top: 50px;
+}
+
+.modal-footer {
+    justify-content: center;
+ }
